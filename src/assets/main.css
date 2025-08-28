@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+@import "tailwindcss";
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  background: #FFF;
+}
+
+.onest {
+  font-family: 'Onest', sans-serif;
+}
+
+.unbounded {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.public-sans {
+  font-family: 'Public Sans', sans-serif;
+}
+
+@theme {
+  --color-primary: #FF6900;
+  --color-secondary: #2e2e2e;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1366px;
+  --breakpoint-large: 1920px;
+}
